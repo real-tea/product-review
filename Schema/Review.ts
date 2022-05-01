@@ -1,18 +1,21 @@
 import mongoose from "mongoose";
-const { ObjectId } = mongoose.Schema.Types; 
-const review = new mongoose.Schema({
-    productId : {
-        type : Number,
-        requird : true
-    }, 
-    review : {
-        type : String,
-        required : true
-    },
-    user : {
-        type : ObjectId,
-        ref: "user"
-    }
-})
+const { ObjectId } = mongoose.Schema.Types;
+const reviewSchema = new mongoose.Schema(
+	{
+		productId: {
+			type: Number,
+			required: true,
+		},
+		content: {
+			type: String,
+			required: true,
+		},
+		user: {
+			type: ObjectId,
+			ref: "user",
+		},
+	},
+	{ timestamps: true }
+);
 
-export default mongoose.model("review",review);
+export default mongoose.models.review || mongoose.model("review", reviewSchema);

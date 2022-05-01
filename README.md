@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Review Website
+
+This is a simple Front end app created with Next js and Typescript
+.In which user can view products, add reviews and view reviews given by other users.
 
 ## Getting Started
 
@@ -12,23 +15,30 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**Client:** React, Redux, Nextjs, ChakraUi
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Screenshots
 
-## Learn More
+![App Screenshot](https://res.cloudinary.com/dnytn2j3p/image/upload/v1644130580/FireShot_Capture_001_-_Disecto_-_One_place_to_get_products_-_product-review-website.vercel.app_gblbl6.png)
 
-To learn more about Next.js, take a look at the following resources:
+![App Screenshot](https://res.cloudinary.com/dnytn2j3p/image/upload/v1644130583/FireShot_Capture_002_-_Mens_Cotton_Jacket_-_product-review-website.vercel.app_cfm9wq.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   Product Search
+-   Adding reviews
+-   User authentication
 
-## Deploy on Vercel
+## Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   Improve designs and reponsiveness
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Add more "from similar categories" to product detail page
+
+-   Add pagination to reviews and product listing page.
+
+-   Add functionalities like filtering and sorting.
+
+-   Refactoring code like creating reusable components
