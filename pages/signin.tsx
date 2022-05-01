@@ -99,7 +99,7 @@ const SignIn: NextPage = () => {
 					<Stack
 						spacing={4}
 						p="1rem"
-						backgroundColor="indigo.900"
+						backgroundColor="whiteAlpha.900"
 						boxShadow="md"
 						borderRadius={"lg"}
 					>

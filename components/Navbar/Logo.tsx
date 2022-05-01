@@ -6,7 +6,7 @@ const Logo = () => {
 	return (
 		<Box cursor={"pointer"} onClick={() => router.push("/")}>
 			<Text fontSize="2xl" as={"h1"} color={"#333"}>
-				Pr-eview
+				Disecto -2 
 			</Text>
 		</Box>
 	);

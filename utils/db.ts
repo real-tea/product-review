@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-function intiDb() {
+const URL = "mongodb+srv://akashDisecto:akash@cluster0.w1wyv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
-	const URL = "mongodb+srv://akashDisecto:akash@cluster0.w1wyv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+function intiDb() {
 	if (mongoose.connection.readyState) {
-		// console.log("already connected");
+		console.log("already connected");
 		return;
 	}
 	mongoose.connect(URL);

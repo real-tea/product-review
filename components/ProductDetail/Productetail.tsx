@@ -23,7 +23,7 @@ const Productetail = () => {
 	);
 	const productList = useSelector((state: RootState) => state.products);
 	return (
-		<Box maxw = "sm"  p={"1rem"} margin={"auto"}>
+		<Box w={{ md: "80%", sm: "90%" }} p={"1rem"} margin={"auto"}>
 			<Head>
 				<title>{product.title}</title>
 			</Head>
@@ -38,7 +38,10 @@ const Productetail = () => {
 					Explore Products
 				</Button>
 			</Stack>
-			
+			{/*
+				Flex Box - 
+				- One side - Image, other side - Details
+			*/}
 			<Flex
 				pt={"2rem"}
 				direction={{ md: "row", sm: "column" }}

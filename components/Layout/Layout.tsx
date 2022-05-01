@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Layout = (props: LayoutPropsTypes) => {
 	return (
-		<Box pb={"15rem"}>
+		<Box pb={"10rem"}>
 			<Navbar />
 			{props.children}
 			{/* Footer */}
@@ -20,9 +20,9 @@ const Layout = (props: LayoutPropsTypes) => {
 				textAlign={"center"}
 				lineHeight={"20vh"}
 			>
-				Made with ♥ by{" "}
+				View on{" "}
 				<Link href="https://github.com/real-tea">
-					Akash
+					Github
 				</Link>
 			</Box>
 		</Box>

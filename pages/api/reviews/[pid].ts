@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Review from "../../../schema/Review";
 import User from "../../../schema/User";
-import intiDb from "../../../DB/db";
+import intiDb from "../../../utils/db";
 import type { UserType } from "../../../types/user/userType";
 intiDb();
 export default async (req: NextApiRequest, res: NextApiResponse) => {

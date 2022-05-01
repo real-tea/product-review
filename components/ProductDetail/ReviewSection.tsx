@@ -55,7 +55,7 @@ const ReviewSection = ({ product }) => {
 				setReviewContent("");
 				setReviews([...reviews, res.data]);
 				toast({
-					title: "Thank You",
+					title: "Thank You for your review",
 					duration: 2000,
 					isClosable: true,
 				});
@@ -63,29 +63,14 @@ const ReviewSection = ({ product }) => {
 	};
 	return (
 		<Box>
+			{/* Input */}
+			{/* show if authenticated */}
 			<Box
 				bgColor={"gray.200"}
 				borderRadius={"lg"}
 				p={"1rem 2rem"}
 				mt={"2rem"}
 			>
-				{/* <>
-						<UserBlock user={user} />
-						<Textarea
-							onChange={(e) => setReviewContent(e.target.value)}
-							bgColor={"#FFF"}
-							placeholder={"Your review is much appreciated"}
-							value={reviewContent}
-						></Textarea>
-						<Button
-							colorScheme={"green"}
-							mt={"1rem"}
-							onClick={handleSubmit}
-							disabled={!reviewContent.length}
-						>
-							Submit
-						</Button>
-					</> */}
 				{isAuth ? (
 					<>
 						<UserBlock user={user} />

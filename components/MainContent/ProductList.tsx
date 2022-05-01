@@ -8,7 +8,7 @@ const ProductList = ({ products }: ProductListProps) => {
 		<Flex
 			wrap={"wrap"}
 			m={"auto"}
-			justifyContent={"center"}
+			justifyContent={"space-between"}
 			maxW={"90%"}
 		>
 			{products.map((item) => (

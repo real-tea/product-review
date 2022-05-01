@@ -66,14 +66,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
 				<Text as="h3" fontWeight={"semibold"} textAlign={"left"}>
 					{product.title}
 				</Text>
-				
-				{/* <Text as={"p"} color={"gray.500"} textTransform={"capitalize"}>
-					{`${product.description}`}
-				</Text> */}
+				{/* Description - for some products it's too long so we will strip it upto 100 chars */}
+				<Text as={"p"} color={"gray.500"} textTransform={"capitalize"}>
+					{`${product.description.slice(0, 100)}...`}
+				</Text>
 				{/* Product Category */}
 				<Badge
 					variant="subtle"
-					colorScheme="blue"
+					colorScheme="green"
 					alignSelf={"flex-start"}
 					mt={"5px"}
 					p={"5px"}
@@ -93,7 +93,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 				isFullWidth
 				backgroundColor={"green.400"}
 				color={"gray.100"}
-				_hover={{ color: "gray.700", backgroundColor: "teal.300" }}
+				_hover={{ color: "gray.700", backgroundColor: "greay.300" }}
 			>
 				Write a Review
 			</Button>

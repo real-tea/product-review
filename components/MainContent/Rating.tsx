@@ -7,7 +7,7 @@ const Rating = ({ numReviews, rating, price }: RatingProps) => {
 	const arr = useMemo(() => [1, 2, 3, 4, 5], []);
 
 	return (
-		<Box display={"flex"} justifyContent={"center"}>
+		<Box display={"flex"} justifyContent={"space-between"}>
 			<Box>
 				{arr.map((item, index) => {
 					return (
@@ -25,7 +25,7 @@ const Rating = ({ numReviews, rating, price }: RatingProps) => {
 					);
 				})}
 				<Text
-					color={"red.500"}
+					color={"orange.500"}
 					mt={"1"}
 				>{`${rating} (${numReviews})`}</Text>
 			</Box>

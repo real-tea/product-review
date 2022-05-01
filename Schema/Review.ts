@@ -12,10 +12,10 @@ const reviewSchema = new mongoose.Schema(
 		},
 		user: {
 			type: ObjectId,
-			ref: "User",
+			ref: "user",
 		},
 	},
 	{ timestamps: true }
 );
 
-export default mongoose.model("Review", reviewSchema);
+export default mongoose.models.review || mongoose.model("review", reviewSchema);
